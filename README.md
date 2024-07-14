@@ -10,15 +10,6 @@ The Network Congestion Prediction application is a Flask web app that utilizes m
 - **Feature Importance Visualization:** View the significance of each feature in the predictions.
 - **User-Friendly Interface:** Simple and intuitive interface for file uploads and viewing results.
 
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Technologies Used](#technologies-used)
-- [Directory Structure](#directory-structure)
-- [How It Works](#how-it-works)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
