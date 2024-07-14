@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Network Congestion Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #50b3a2;
+            color: #fff;
+            padding: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header h1 {
+            margin: 0;
+            padding: 0;
+            text-transform: uppercase;
+        }
+        #main {
+            padding: 30px;
+            background: #fff;
+            margin-top: 30px;
+        }
+        form input[type="file"] {
+            display: block;
+            margin-bottom: 20px;
+        }
+        form input[type="submit"] {
+            display: inline-block;
+            color: #fff;
+            background-color: #50b3a2;
+            border: none;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+        img.logo {
+            height: 50px; /* Adjust as needed */
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Network Congestion Prediction</h1>
+        </div>
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo">
+    </header>
+    <div class="container">
+        <div id="main">
+            <h2>Upload a CSV file to get predictions</h2>
+            <form action="/predict" method="post" enctype="multipart/form-data">
+                <input type="file" name="file">
+                <input type="submit" value="Upload and Predict">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
