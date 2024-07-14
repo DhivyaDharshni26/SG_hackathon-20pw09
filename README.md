@@ -28,8 +28,9 @@ The Network Congestion Prediction application is a Flask web app that utilizes m
    cd network-congestion-prediction
 **Usage**
 Start the Flask server:
-
+```
 python app.py
+```
 **Open your web browser and navigate to:**
 ```
 http://127.0.0.1:5000
