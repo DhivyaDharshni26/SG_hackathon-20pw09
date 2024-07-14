@@ -17,8 +17,8 @@ The Network Congestion Prediction application is a Flask web app that utilizes m
    ```bash
    git clone <repository-url>
    cd network-congestion-prediction
-**Usage**
-Start the Flask server:
+
+**Start the Flask server:**
 ```
 python app.py
 ```
